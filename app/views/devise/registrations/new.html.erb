@@ -1,0 +1,19 @@
+<h2>Inregistrare angajat nou</h2>
+
+<%= simple_form_for(resource, :as => resource_name, :url => session_path(resource_name), html: { class: 'form-horizontal'}) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :name, label: "Nume si prenume" %>
+    <%= f.input :email, :required => true, :autofocus => true %>
+    <%= f.input :image, label: "Add an avatar" %>
+    <%= f.input :password, :required => true %>
+    <%= f.input :password_confirmation, :required => true %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit, "Sign up" %>
+  </div>
+<% end %>
+
+<%= render "devise/shared/links" %>

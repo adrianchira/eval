@@ -16,11 +16,34 @@
                         <li>    
                             <%= link_to 'About',  about_path %>
                         </li>
+                        <% if user_signed_in? %>
+                        	<li><%= link_to "Vezi evaluare", "#" %></li>
+                        	<li><%= link_to "Autoevaluare", "#" %></li>
+                        	<% @user = current_user %>
+                        	 <% if @user.is_admin = true %>
+                        			<li><%= link_to "Adauga angajat", "#" %></li>
+                        			<li><%= link_to "Modifica angajat", "#" %></li>
+                        			<li><%= link_to "Sterge Angajat", "#" %></li>
+                        	 <% end %>
+                        	 <% if @user.is_evaluator = true %>
+                        			<li><%= link_to "Adauga o evaluare", "#" %></li>
+                        	 <% end %>
+                        <% end %>
                     </ul>
                     <ul class="nav pull-right">
+
                       <% if user_signed_in? %>
+                      <% @user = current_user %>
+                      	<li class="dropdown">
+                      		<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                      		<%= @user.name %>
+                    <b class="caret"></b>
+                    </a>
+                      		<ul class="dropdown-menu">
                         <li><%= link_to "Edit Profile", edit_user_registration_path %></li>
                         <li><%= link_to "Logout", destroy_user_session_path, method: :delete %></li>
+                      		</ul>
+                       
                       <% else %>
                     <li><%= link_to "Login", new_user_session_path %></li>
                       <% end %>

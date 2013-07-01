@@ -1,11 +1,15 @@
 <div class="center hero-unit">
+	<% if user_signed_in? %> 
+	<h1>Bine ai revenit <% current_user.name %> !</h1>
+	<% else %>
 	<h1>Bine ai revenit!</h1>
+	<% end %>
 	<p>
 	  You've found the home page for the
 	  <%= link_to "Aplicatia de evaluare a performantei", "http://intranet.carpatica.ro" %>
 	  application.
 	</p>
 	<p>
-	  <%= link_to "Sign Up Now!", new_user_registration_path, class: "btn btn-large btn-primary" %>
+	  <%= link_to "Login", new_user_session_path, class: "btn btn-large btn-primary" %>
 	</p>
 </div>

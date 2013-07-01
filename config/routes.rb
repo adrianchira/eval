@@ -1,4 +1,7 @@
 Eval::Application.routes.draw do
+  resources :evalists
+
+
   devise_for :views
 
   devise_for :users
