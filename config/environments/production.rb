@@ -15,6 +15,7 @@ Eval::Application.configure do
   config.assets.compress = true
 
   # Don't fallback to assets pipeline if a precompiled asset is missed
+  config.assets.precompile += %w( active_admin.css active_admin.js)
   config.assets.compile = false
 
   # Generate digests for assets URLs
