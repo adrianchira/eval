@@ -66,6 +66,6 @@ module Eval
 
     # Precompile additional assets. Defaults to [application.js, application.css, non-JS/CSS]
     config.assets.precompile += ['active_admin.css.scss', 'active_admin.js'] 
-
+    config.assets.precompile += %w( active_admin.css active_admin.js active_admin/print.css )
   end
 end
