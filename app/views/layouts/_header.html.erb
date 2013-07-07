@@ -21,7 +21,7 @@
                         	<li><%= link_to "Autoevaluare", "#" %></li>
                         	<% @user = current_user %>
                         	 <% if @user.is_admin = true %>
-                        			<li><%= link_to "Adauga angajat", "#" %></li>
+                        			<li><%= link_to "Adauga angajat", new_user_registration_path %></li>
                         			<li><%= link_to "Modifica angajat", "#" %></li>
                         			<li><%= link_to "Sterge Angajat", "#" %></li>
                         	 <% end %>
