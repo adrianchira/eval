@@ -1,4 +1,7 @@
 Eval::Application.routes.draw do
+  resources :evaluations
+
+
   ActiveAdmin.routes(self)
 
   devise_for :admin_users, ActiveAdmin::Devise.config

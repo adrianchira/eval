@@ -1,0 +1,257 @@
+<h1>Listing evaluations</h1>
+
+<table>
+  <tr>
+    <th>Category name 1</th>
+    <th>Objective11</th>
+    <th>Objective11 comments</th>
+    <th>Objective11 eval comments</th>
+    <th>Objective11 qualifier</th>
+    <th>Objective11 evalq</th>
+    <th>Nextpobjective11</th>
+    <th>Objective21</th>
+    <th>Objective21 comments</th>
+    <th>Objective21 eval comments</th>
+    <th>Objective21 qualifier</th>
+    <th>Objective21 evalq</th>
+    <th>Nextpobjective21</th>
+    <th>Objective31</th>
+    <th>Objective31 comments</th>
+    <th>Objective31 eval comments</th>
+    <th>Objective31 qualifier</th>
+    <th>Objective31 evalq</th>
+    <th>Nextpobjective31</th>
+    <th>Category name 2</th>
+    <th>Objective12</th>
+    <th>Objective12 comments</th>
+    <th>Objective12 eval comments</th>
+    <th>Objective12 qualifier</th>
+    <th>Objective12 evalq</th>
+    <th>Nextpobjective12</th>
+    <th>Objective22</th>
+    <th>Objective22 comments</th>
+    <th>Objective22 eval comments</th>
+    <th>Objective22 qualifier</th>
+    <th>Objective22 evalq</th>
+    <th>Nextpobjective22</th>
+    <th>Objective32</th>
+    <th>Objective32 comments</th>
+    <th>Objective32 eval comments</th>
+    <th>Objective32 qualifier</th>
+    <th>Objective32 evalq</th>
+    <th>Nextpobjective32</th>
+    <th>Category name 3</th>
+    <th>Objective13</th>
+    <th>Objective13 comments</th>
+    <th>Objective13 eval comments</th>
+    <th>Objective13 qualifier</th>
+    <th>Objective13 evalq</th>
+    <th>Nextpobjective13</th>
+    <th>Objective23</th>
+    <th>Objective23 comments</th>
+    <th>Objective23 eval comments</th>
+    <th>Objective23 qualifier</th>
+    <th>Objective23 evalq</th>
+    <th>Nextpobjective23</th>
+    <th>Objective33</th>
+    <th>Objective33 comments</th>
+    <th>Objective33 eval comments</th>
+    <th>Objective33 qualifier</th>
+    <th>Objective33 evalq</th>
+    <th>Category name 4</th>
+    <th>Objective14</th>
+    <th>Objective14 comments</th>
+    <th>Objective14 eval comments</th>
+    <th>Objective14 qualifier</th>
+    <th>Objective14 evalq</th>
+    <th>Nextpobjective14</th>
+    <th>Objective24</th>
+    <th>Objective24 comments</th>
+    <th>Objective24 eval comments</th>
+    <th>Objective24 qualifier</th>
+    <th>Objective24 evalq</th>
+    <th>Nextpobjective24</th>
+    <th>Objective34</th>
+    <th>Objective34 comments</th>
+    <th>Objective34 eval comments</th>
+    <th>Objective34 qualifier</th>
+    <th>Objective34 evalq</th>
+    <th>Nextpobjective34</th>
+    <th>Nextpobjective34</th>
+    <th>Category name 4</th>
+    <th>Objective14</th>
+    <th>Objective14 comments</th>
+    <th>Objective14 eval comments</th>
+    <th>Objective14 qualifier</th>
+    <th>Objective14 evalq</th>
+    <th>Nextpobjective14</th>
+    <th>Objective24</th>
+    <th>Objective24 comments</th>
+    <th>Objective24 eval comments</th>
+    <th>Objective24 qualifier</th>
+    <th>Objective24 evalq</th>
+    <th>Nextpobjective24</th>
+    <th>Objective34</th>
+    <th>Objective34 comments</th>
+    <th>Objective34 eval comments</th>
+    <th>Objective34 qualifier</th>
+    <th>Objective34 evalq</th>
+    <th>Nextpobjective34</th>
+    <th>Category name 5</th>
+    <th>Objective15</th>
+    <th>Objective15 comments</th>
+    <th>Objective15 eval comments</th>
+    <th>Objective15 qualifier</th>
+    <th>Objective15 evalq</th>
+    <th>Nextpobjective15</th>
+    <th>Objective25</th>
+    <th>Objective25 comments</th>
+    <th>Objective25 eval comments</th>
+    <th>Objective25 qualifier</th>
+    <th>Objective25 evalq</th>
+    <th>Nextpobjective25</th>
+    <th>Objective35</th>
+    <th>Objective35 comments</th>
+    <th>Objective35 eval comments</th>
+    <th>Objective35 qualifier</th>
+    <th>Objective35 evalq</th>
+    <th>Nextpobjective35</th>
+    <th>Overalleval</th>
+    <th>User</th>
+    <th>Year</th>
+    <th>Evaluator</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @evaluations.each do |evaluation| %>
+  <tr>
+    <td><%= evaluation.category_name_1 %></td>
+    <td><%= evaluation.objective11 %></td>
+    <td><%= evaluation.objective11_comments %></td>
+    <td><%= evaluation.objective11_eval_comments %></td>
+    <td><%= evaluation.objective11_qualifier %></td>
+    <td><%= evaluation.objective11_evalq %></td>
+    <td><%= evaluation.nextpobjective11 %></td>
+    <td><%= evaluation.objective21 %></td>
+    <td><%= evaluation.objective21_comments %></td>
+    <td><%= evaluation.objective21_eval_comments %></td>
+    <td><%= evaluation.objective21_qualifier %></td>
+    <td><%= evaluation.objective21_evalq %></td>
+    <td><%= evaluation.nextpobjective21 %></td>
+    <td><%= evaluation.objective31 %></td>
+    <td><%= evaluation.objective31_comments %></td>
+    <td><%= evaluation.objective31_eval_comments %></td>
+    <td><%= evaluation.objective31_qualifier %></td>
+    <td><%= evaluation.objective31_evalq %></td>
+    <td><%= evaluation.nextpobjective31 %></td>
+    <td><%= evaluation.category_name_2 %></td>
+    <td><%= evaluation.objective12 %></td>
+    <td><%= evaluation.objective12_comments %></td>
+    <td><%= evaluation.objective12_eval_comments %></td>
+    <td><%= evaluation.objective12_qualifier %></td>
+    <td><%= evaluation.objective12_evalq %></td>
+    <td><%= evaluation.nextpobjective12 %></td>
+    <td><%= evaluation.objective22 %></td>
+    <td><%= evaluation.objective22_comments %></td>
+    <td><%= evaluation.objective22_eval_comments %></td>
+    <td><%= evaluation.objective22_qualifier %></td>
+    <td><%= evaluation.objective22_evalq %></td>
+    <td><%= evaluation.nextpobjective22 %></td>
+    <td><%= evaluation.objective32 %></td>
+    <td><%= evaluation.objective32_comments %></td>
+    <td><%= evaluation.objective32_eval_comments %></td>
+    <td><%= evaluation.objective32_qualifier %></td>
+    <td><%= evaluation.objective32_evalq %></td>
+    <td><%= evaluation.nextpobjective32 %></td>
+    <td><%= evaluation.category_name_3 %></td>
+    <td><%= evaluation.objective13 %></td>
+    <td><%= evaluation.objective13_comments %></td>
+    <td><%= evaluation.objective13_eval_comments %></td>
+    <td><%= evaluation.objective13_qualifier %></td>
+    <td><%= evaluation.objective13_evalq %></td>
+    <td><%= evaluation.nextpobjective13 %></td>
+    <td><%= evaluation.objective23 %></td>
+    <td><%= evaluation.objective23_comments %></td>
+    <td><%= evaluation.objective23_eval_comments %></td>
+    <td><%= evaluation.objective23_qualifier %></td>
+    <td><%= evaluation.objective23_evalq %></td>
+    <td><%= evaluation.nextpobjective23 %></td>
+    <td><%= evaluation.objective33 %></td>
+    <td><%= evaluation.objective33_comments %></td>
+    <td><%= evaluation.objective33_eval_comments %></td>
+    <td><%= evaluation.objective33_qualifier %></td>
+    <td><%= evaluation.objective33_evalq %></td>
+    <td><%= evaluation.category_name_4 %></td>
+    <td><%= evaluation.objective14 %></td>
+    <td><%= evaluation.objective14_comments %></td>
+    <td><%= evaluation.objective14_eval_comments %></td>
+    <td><%= evaluation.objective14_qualifier %></td>
+    <td><%= evaluation.objective14_evalq %></td>
+    <td><%= evaluation.nextpobjective14 %></td>
+    <td><%= evaluation.objective24 %></td>
+    <td><%= evaluation.objective24_comments %></td>
+    <td><%= evaluation.objective24_eval_comments %></td>
+    <td><%= evaluation.objective24_qualifier %></td>
+    <td><%= evaluation.objective24_evalq %></td>
+    <td><%= evaluation.nextpobjective24 %></td>
+    <td><%= evaluation.objective34 %></td>
+    <td><%= evaluation.objective34_comments %></td>
+    <td><%= evaluation.objective34_eval_comments %></td>
+    <td><%= evaluation.objective34_qualifier %></td>
+    <td><%= evaluation.objective34_evalq %></td>
+    <td><%= evaluation.nextpobjective34 %></td>
+    <td><%= evaluation.nextpobjective34 %></td>
+    <td><%= evaluation.category_name_4 %></td>
+    <td><%= evaluation.objective14 %></td>
+    <td><%= evaluation.objective14_comments %></td>
+    <td><%= evaluation.objective14_eval_comments %></td>
+    <td><%= evaluation.objective14_qualifier %></td>
+    <td><%= evaluation.objective14_evalq %></td>
+    <td><%= evaluation.nextpobjective14 %></td>
+    <td><%= evaluation.objective24 %></td>
+    <td><%= evaluation.objective24_comments %></td>
+    <td><%= evaluation.objective24_eval_comments %></td>
+    <td><%= evaluation.objective24_qualifier %></td>
+    <td><%= evaluation.objective24_evalq %></td>
+    <td><%= evaluation.nextpobjective24 %></td>
+    <td><%= evaluation.objective34 %></td>
+    <td><%= evaluation.objective34_comments %></td>
+    <td><%= evaluation.objective34_eval_comments %></td>
+    <td><%= evaluation.objective34_qualifier %></td>
+    <td><%= evaluation.objective34_evalq %></td>
+    <td><%= evaluation.nextpobjective34 %></td>
+    <td><%= evaluation.category_name_5 %></td>
+    <td><%= evaluation.objective15 %></td>
+    <td><%= evaluation.objective15_comments %></td>
+    <td><%= evaluation.objective15_eval_comments %></td>
+    <td><%= evaluation.objective15_qualifier %></td>
+    <td><%= evaluation.objective15_evalq %></td>
+    <td><%= evaluation.nextpobjective15 %></td>
+    <td><%= evaluation.objective25 %></td>
+    <td><%= evaluation.objective25_comments %></td>
+    <td><%= evaluation.objective25_eval_comments %></td>
+    <td><%= evaluation.objective25_qualifier %></td>
+    <td><%= evaluation.objective25_evalq %></td>
+    <td><%= evaluation.nextpobjective25 %></td>
+    <td><%= evaluation.objective35 %></td>
+    <td><%= evaluation.objective35_comments %></td>
+    <td><%= evaluation.objective35_eval_comments %></td>
+    <td><%= evaluation.objective35_qualifier %></td>
+    <td><%= evaluation.objective35_evalq %></td>
+    <td><%= evaluation.nextpobjective35 %></td>
+    <td><%= evaluation.overalleval %></td>
+    <td><%= evaluation.user_id %></td>
+    <td><%= evaluation.year %></td>
+    <td><%= evaluation.evaluator_id %></td>
+    <td><%= link_to 'Show', evaluation %></td>
+    <td><%= link_to 'Edit', edit_evaluation_path(evaluation) %></td>
+    <td><%= link_to 'Destroy', evaluation, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Evaluation', new_evaluation_path %>
