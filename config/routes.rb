@@ -1,4 +1,10 @@
 Eval::Application.routes.draw do
+  resources :years
+
+
+  resources :categories
+
+
   resources :evaluations
 
 

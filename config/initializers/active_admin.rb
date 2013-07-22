@@ -1,5 +1,5 @@
 ActiveAdmin.setup do |config|
-
+  config.allow_comments = false
   # == Site Title
   #
   # Set the title that is displayed on the main layout
